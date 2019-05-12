@@ -11,12 +11,22 @@ public class student {
 	private String Major = null;		//专业
 	private String ClassName = null;	//班级
 	private String Home = null; 		//籍贯
+	private String Birthday = null;		//生日
 	
 	
+	
+	
+	public String getBirthday() {
+		return Birthday;
+	}
+	public void setBirthday(String birthday) {
+		Birthday = birthday;
+	}
 	
 	public String getName() {
 		return name;
 	}
+	
 	public void setName(String name) {
 		this.name = name;
 	}
