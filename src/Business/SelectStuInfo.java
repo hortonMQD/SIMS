@@ -3,15 +3,22 @@ package Business;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-public class SelectStuInfo extends JPanel{
+public class SelectStuInfo extends PanelImpl{
 	
-	public JPanel jpanel;
 	
 	
 	public SelectStuInfo(String test) {
-		jpanel = new JPanel();
-		JButton jb = new JButton(test);
-		jpanel.add(jb);
+		initPanel(test);
 	}
 	
+	
+	public void initPanel() {
+		
+	}
+	
+	
+	public void initPanel(String test) {
+		JButton jb = new JButton(test);
+		this.add(jb,JButton.CENTER);
+	}
 }
