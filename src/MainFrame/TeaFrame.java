@@ -1,20 +1,15 @@
 package MainFrame;
 
 import java.awt.BorderLayout;
-import java.awt.Button;
 import java.awt.CardLayout;
-import java.awt.Frame;
-import java.awt.Label;
-import java.awt.Panel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import Business.SelectStuInfo;
+import Business.*;
 
 public class TeaFrame extends JFrame{
 	
@@ -27,7 +22,7 @@ public class TeaFrame extends JFrame{
 		this.setLocationRelativeTo(null);//设置窗体居中显示
 		this.setVisible(true);		//设置窗体可见
 		this.setResizable(true);   //设置窗体锁定
-		
+		this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		
 		
 		JPanel CardPanel = new JPanel();
@@ -36,7 +31,7 @@ public class TeaFrame extends JFrame{
 		
 		
 		SelectStuInfo panel1 = new SelectStuInfo("第一个界面");
-		SelectStuInfo panel2 = new SelectStuInfo("第二个界面");
+		PanelImpl panel2 = new AddStuInfo();
 		SelectStuInfo panel3 = new SelectStuInfo("第三个界面");
 //		SelectStuInfo panel4 = new SelectStuInfo("第四个界面");
 		
